@@ -1,0 +1,30 @@
+package org.antislashn.formation;
+
+public class TaskMonitorThisWithSleep implements TaskMonitor {
+
+	@Override
+	public void doTask_1(int delayInSecondes) {
+		synchronized (this) {
+			System.out.println(">>> BEGIN doTask_1 [" + Thread.currentThread().getName() + "]");
+			try {
+				Thread.sleep(delayInSecondes*1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(">>> END doTask_1 [" + Thread.currentThread().getName() + "]");
+		}
+	}
+
+	@Override
+	public void doTask_2(int delayInSecondes) {
+		synchronized (this) {
+			System.out.println(">>> BEGIN doTask_2 [" + Thread.currentThread().getName() + "]");
+			try {
+				Thread.sleep(delayInSecondes*1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(">>> END doTask_2 [" + Thread.currentThread().getName() + "]");
+		}
+	}
+}

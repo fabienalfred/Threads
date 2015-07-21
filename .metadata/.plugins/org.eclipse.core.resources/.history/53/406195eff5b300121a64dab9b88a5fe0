@@ -1,0 +1,23 @@
+package org.antislashn.formation;
+
+public class Helper {
+	public static final int SANS_SYNCHRONIZED = 1;
+	public static final int SYNCHRONIZED_THIS = 2;
+	public static final int SYNCHRONIZED_THIS_SLEEP = 3;
+	public static final int SYNCHRONIZED_OBJECT = 4;
+	public static final int SYNCHRONIZED_TWO_OBJECTS = 5;
+	public static TaskMonitor getTaskMonitor(int type){
+		if(type == SANS_SYNCHRONIZED)
+			return new TaskMonitorWithoutSynchronized();
+		if(type == SYNCHRONIZED_THIS)
+			return new TaskMonitorThis();
+		if(type == SYNCHRONIZED_THIS_SLEEP)
+			return new TaskMonitorThisWithSleep();
+		if(type ==  SYNCHRONIZED_OBJECT)
+			return new TaskMonitorObject();
+		if(type ==  SYNCHRONIZED_TWO_OBJECTS)
+			return new TaskMonitorTwoObjects();
+		return null;
+	}
+
+}

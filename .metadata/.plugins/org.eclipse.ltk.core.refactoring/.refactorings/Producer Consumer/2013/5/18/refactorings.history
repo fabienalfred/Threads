@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.antislashn.formation.wait.notify.Buffer&apos; to &apos;Heap&apos;&#x0D;&#x0A;- Original project: &apos;Producer Consumer&apos;&#x0D;&#x0A;- Original element: &apos;org.antislashn.formation.wait.notify.Buffer&apos;&#x0D;&#x0A;- Renamed element: &apos;org.antislashn.formation.wait.notify.Heap&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Buffer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.antislashn.formation.wait.notify{Buffer.java[Buffer" matchStrategy="1" name="Heap" qualified="false" references="true" similarDeclarations="false" stamp="1367584528516" textual="false" version="1.0"/>
+</session>

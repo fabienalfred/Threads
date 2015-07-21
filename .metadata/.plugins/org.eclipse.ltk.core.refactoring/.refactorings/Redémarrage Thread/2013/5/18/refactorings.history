@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;mn&apos; in &apos;org.antislashn.formation.Task.Task(...)&apos; to &apos;seconds&apos;&#x0D;&#x0A;- Original project: &apos;Redémarrage Thread&apos;&#x0D;&#x0A;- Original element: &apos;org.antislashn.formation.Task.Task(int).mn&apos;&#x0D;&#x0A;- Renamed element: &apos;mn&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;mn&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;org.antislashn.formation{Task.java[Task~Task~I@mn!110!115!114!115!I!0!true" name="seconds" references="true" stamp="1367582664187" version="1.0"/>
+</session>
